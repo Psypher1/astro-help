@@ -1,0 +1,13 @@
+---
+import Heading from "@ui/Heading.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+const {frontmatter} = Astro.props
+---
+
+<BaseLayout title={frontmatter.title}>
+  <Heading heading={frontmatter.title}/>
+  <div class="prose prose-invert">
+    <slot/>
+  </div>
+</BaseLayout>

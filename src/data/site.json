@@ -1,0 +1,129 @@
+{
+	"title": "James Midzi",
+	"description": "Solutions Architect at Tenet Industries",
+	"url": "https://jamesmidzi.com/",
+	"skills": {
+		"comfortable": [
+			{ "name": "HTML5", "icon": "html5" },
+			{ "name": "CSS3", "icon": "css3" },
+			{ "name": "JavaScript", "icon": "javascript" },
+			{ "name": "Next.js", "icon": "nextjs" },
+			{ "name": "Git", "icon": "git" },
+			{ "name": "SASS", "icon": "sass" },
+			{ "name": "Tailwind", "icon": "tailwindcss" }
+		],
+		"mastering": [
+			{ "name": "TYPO3", "icon": "typo3" },
+			{ "name": "React", "icon": "react" }
+		]
+	},
+	"journey": {
+		"2035": [
+			{
+				"title": "Founder",
+				"description": "Owner and founder of several companies spanning different domains."
+			}
+		],
+		"2022": [
+			{
+				"title": "Delivered Chaotik Angel site",
+				"description": "Worked on and got Chaotik Angel site to clients satisfaction."
+			},
+			{
+				"title": "Delivered PRAEY site",
+				"description": "Worked on and got PRAEY site to clients satisfaction."
+			},
+			{
+				"title": "Participated in Hackathon",
+				"description": "Took part in first hackathon and bult a project to help with my language."
+			},
+			{
+				"title": "Collaborated on an article",
+				"description": "Wrote an article in collaboration with the Medusajs team."
+			}
+		],
+		"2021": [
+			{
+				"title": "TYPO3 Mentorship Program",
+				"description": "Joined the TYPO3 Mentorship Program and learnt a lot during the time"
+			}
+		],
+		"2017": [
+			{
+				"title": "DALF C1",
+				"description": "Got my French DALF C1 certificaion from Alliance Française"
+			}
+		]
+	},
+	"testimonials": [
+		{
+			"image": "",
+			"name": "Kelvin Dube",
+			"project": {
+				"title": "Chaotik Angel",
+				"link": "https://chaotikangel.vercel.app/"
+			},
+			"title": "~ Tattoo Artist",
+			"quote": "Dante is a excellent at what hedoes. He takes the utmost attention to detail when it comes to making sure that alll aspects that have been discussed has been completed successfully."
+		},
+		{
+			"image": "",
+			"name": "Tapiwanashe Manhombo",
+			"project": {
+				"title": "PRÆY",
+				"link": "https://tapiwanashe.com/"
+			},
+			"title": "~ Writer",
+			"quote": "Dante goes above and beyond expectations each time. He will call you to verify things or run ideas past you. And he will make sure everything runs as efficiently as possible. He NEVER forgets a discussion, which is great because nothing falls through the cracks. Highly recommend."
+		},
+		{
+			"image": "",
+			"name": "Kuziwa Mutseyekwa",
+			"project": {
+				"title": "Monoqo Designs",
+				"link": "https://monoqo.netlify.app/"
+			},
+			"title": "~ CEO",
+			"quote": "James makes sure that all your needs and concerns are taken care of. It has been great working with him."
+		}
+	],
+	"socials": [
+		{
+			"link": "https://twitter.com/psypher1",
+			"title": "Twitter",
+			"icon": "twitter"
+		},
+		{
+			"link": "https://www.linkedin.com/in/jamesmidzi/",
+			"title": "LinkedIn",
+			"icon": "email"
+		},
+		{
+			"link": "https://github.com/psypher1",
+			"title": "GitHub",
+			"icon": "github"
+		}
+	],
+	"socialLinks": [
+		{
+			"href": "https://twitter.com/psypher1",
+			"classes": "fa-brands fa-twitter",
+			"name": "twitter"
+		},
+		{
+			"href": "https://github.com/psypher1",
+			"classes": "fa-brands fa-github",
+			"name": "github"
+		},
+		{
+			"href": "",
+			"classes": "fa-brands fa-discord",
+			"name": "discord"
+		},
+		{
+			"href": "mailto:jamesmidzi@gmail.com",
+			"classes": "fa-solid fa-envelope",
+			"name": "email"
+		}
+	]
+}

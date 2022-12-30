@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Heading from "@ui/Heading.astro";
+
+---
+
+<BaseLayout title='Projects' description="Work done for clients or myself" >
+  <section aria-label="projects" class="container mx-auto space-y-6 ">
+   <Heading heading="Projects"/>
+
+    <article class="">
+      <h2 class="text-xl text-indigo-600 font-medium uppercase">Work for Clients</h2>
+      <p class="prose prose-invert text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse impedit explicabo exercitationem iure magni quos atque pariatur, ad quasi unde sed minus laboriosam aperiam at officia in, necessitatibus fugit.</p>
+   
+    </article>
+
+    <article>
+      <h2 class="text-xl text-indigo-600 font-medium uppercase">Personal Projects</h2>
+      <p class="prose  text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse impedit explicabo exercitationem iure magni quos atque pariatur, ad quasi unde sed minus laboriosam aperiam at officia in, necessitatibus fugit.</p>
+    </article>
+
+  </section>
+</BaseLayout>

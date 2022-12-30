@@ -1,0 +1,35 @@
+---
+/* Meta from data folder */
+// import site from "@data/site.json" - 
+// const {title, description} = site
+
+/* Meta from props */
+const {title, description} = Astro.props
+
+let metaTitle = title? title + " | James Midzi" : "James Midzi"
+---
+<!-- Global Metadata -->
+<meta http-equiv="Content-Language" content="en">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=J, initial-scale=1.0" />
+<!-- <link rel="icon" type="image/icon" href="/favicon.ico" /> -->
+
+<!-- Primary Meta Tags -->
+<!-- <title>{ title } | James Midzi</title> -->
+<title>{metaTitle}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+
+<!-- Dev Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/4af7875d4c.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerPolicy="no-referrer" /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css" integrity="sha512-X2hbziex+UPQ+KdI4BWI+39jEDhf2Smc6bfFI/FTIzWnt7mbwZCUU4RWalnMfxtHCpISlexzmd2kvPFJCliiPA==" crossorigin="anonymous" referrerPolicy="no-referrer" /> -->
+
+<!-- https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css -->
+<!-- Font -->
+<!-- <link rel="stylesheet" href="style.css"> -->

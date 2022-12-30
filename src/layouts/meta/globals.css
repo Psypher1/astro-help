@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Thin.woff") format("woff");
+  font-display: swap;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "HumanSans";
+  src: url("/fonts/HumanSans-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 900;
+}

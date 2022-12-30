@@ -1,0 +1,35 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+
+const links = [
+  {
+    href: '/',
+    label: 'Home'
+  },
+  {
+    href: '/projects',
+    label: 'Projects'
+  },
+  {
+    href: '/articles',
+    label: 'Articles'
+  },
+  {
+    href: '/about',
+    label: 'About'
+  },
+]
+---
+
+<nav class="navigation flex justify-center items-center gap-2 font-light text-indigo-100">
+  {links.map(({href,label}) => (
+    <a {...{href}} class={`rounded block hover:bg-gray-700 transition duration-300 px-5 py-2 ${ pathname === href ? 'bg-gray-700' : ''} `}>{label}</a>
+  ))}
+ 
+</nav>
+
+
+<!-- <a href="/" class={`hover:bg-gray-700 transition duration-300 py-2 px-5 ${ currentPath === ''? 'bg-gray-700' : ''} `}>Home</a> 
+<a href="/projects" class={`hover:bg-gray-700 transition duration-300 py-2 px-5 ${ currentPath === 'projects'? 'bg-gray-700' : ''} `} >Projects</a>
+<a href="/articles" class={`hover:bg-gray-700 transition duration-300 py-2 px-5 ${ currentPath === 'articles'? 'bg-gray-700' : ''} `} >Articles</a> -->

@@ -1,0 +1,45 @@
+---
+
+import BaseHead from "./meta/BaseHead.astro";
+
+const {title, description = "Solutions Architect, Writer, Tutor"} = Astro.props
+
+import "./meta/globals.css"
+
+import Footer from "./partials/Footer.astro";
+import Header from "./partials/Header.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <BaseHead {title} {description}/>
+  </head>
+  <body class="font-human antialiased bg-black text-gray-100">
+    <Header/>
+    <!-- <header class="sticky inset-0  w-full bg-black/90 border-b border-gray-600 backdrop-blur-md ">
+      <div class="max-w-4xl flex items-center justify-between  mx-auto py-4 px-3">
+
+        <div class="flex">
+          <button class="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+            </svg>     
+          </button>
+          <a href='/' class="block font-semibold text-2xl">
+            JM
+            <span class="sr-only">to home page</span>
+          </a>
+        </div>
+        <Navigation/>
+      </div>
+    </header> -->
+    <main class="py-16 px-10 max-w-5xl mx-auto border min-h-screen ">
+      <slot />
+    </main>
+   <Footer/>
+    <!-- <footer class="p-4 text-center">
+      <p class="text-gray-300">&copy; {new Date().getFullYear()} | James Midzi</p>
+    </footer> -->
+  </body>
+</html>

@@ -1,0 +1,75 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+import site from '@data/site.json'
+import Heading from '@ui/Heading.astro';
+
+const {testimonials, socialLinks} = site
+---
+
+<BaseLayout title="Home">
+	
+	<section class="text-center md:text-left">
+		
+		 <Heading heading="James 'Dante'"/>
+		<!-- <h1 class="text-5xl md:text-6xl font-bold whitespace-nowrap">James Dante</h1>  -->
+		<h3 class="text-gray-400 text-xl md:text-2xl mb-8">Solutions Architect</h3>
+
+		<p class="prose prose-base md:prose-lg text-gray-400">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam modi quae. Quod unde, hic laboriosam inventore ipsa, veniam libero at sapiente est alias officia veritatis ex eveniet sit dicta recusandae ea beatae, dignissimos architecto. Distinctio a vero sapiente quidem. Optio asperiores, neque veritatis perspiciatis cumque laborum magnam incidunt non?
+		</p>
+	</section>
+		
+	<!-- <hr class="my-8">
+	<h1 class="text-[2.5rem] md:text-6xl lg:text-[4.5rem] font-bold whitespace-nowrap">James 'Dante'</h1>
+	<p class="text-gray-400 text-xl">Solutions Architect</p> -->
+
+
+	<!-- <p class="text-[2.5rem] md:text-7xl lg:text-[5.5rem] text-gray-400">Solutions Architect</p> -->
+
+	<!-- <p class="">I create visual appealing accessible solutions for varying needs</p> -->
+
+	<section class="text-center my-12" aria-label="social links">
+		<div class="w-1/2 mx-auto md:mx-0 flex gap-4 text-xl">
+			{socialLinks.map(link => (
+				<a href={link.href} aria-label={link.name}>
+					<i title={link.name} class={link.classes}></i>
+				</a>
+			))}
+		</div>
+	</section>
+
+	
+
+
+	
+
+	<!-- LATEST ARTCILE -->
+	<section class="my-20" aria-label="latest article">
+		<h2  class="text-2xl mb-2 font-semibold">Latest Article</h2>
+		<article>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat aliquid exercitationem sit sed nulla consequatur quos? Ipsa asperiores cumque eaque, fugiat dignissimos fuga laudantium exercitationem cum ex voluptatibus, obcaecati at autem? Ipsam nesciunt distinctio eum, ullam illo voluptatum dolor aliquid obcaecati excepturi? Recusandae ab autem esse cumque nulla harum dolorem temporibus? Quas, unde animi dicta voluptatum a possimus in?</p>
+		</article>
+	</section>
+
+	<!-- WORK I'M PROUD OF  -->
+
+	<!-- TESTIMONIALS -->
+	<section class="my-20
+	" aria-label="testimonials">
+		<h2 class="text-2xl mb-2 font-semibold">Testimonials</h2>
+		<div class="grid md:grid-cols-2 gap-6">
+			{testimonials.map(({name, quote, project }) => (
+				<blockquote class="  prose p-4 border-l-4 bg-gray-900  rounded shadow-xl">
+						<p class="prose  text-gray-400">{quote}</p>
+						<cite class=" text-gray-300"> ~ {name}
+						<a target="_blank" class="block text-sm ml-4 text-gray-500 hover:text-sky-500" href={project.link}>{project.title}</a>	
+						</cite>
+					</blockquote>
+				))}
+		</div>
+	</section>
+</BaseLayout>
+
+
+

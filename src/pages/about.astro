@@ -1,0 +1,86 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Heading from '@ui/Heading.astro';
+import site from '@data/site.json'
+
+const {journey, skills} = site
+
+
+---
+
+<BaseLayout title="About" >
+
+	<section class="flex flex-col-reverse md:flex-row gap-6" aria-label="I am James">
+    <div class="text-center md:text-left">
+			<Heading heading="Who is James?"/>
+			<p class="my-2 prose prose-base md:prose-lg text-gray-400">
+				I am passionate about creation, be it code or written. I believe that knowledge should be sharee. If we all gave a little bit of our time to helping the each other, the world would be a better place.
+			</p>
+			<p class="prose prose-a:text-gray-200 prose-base md:prose-lg text-gray-400">
+			My days are spent either trying to solve an issue I've encountered (which forms the basis for my <a  href="/articles">articles</a>), reading/listening to something, or on client work
+			</p>
+		</div>
+		<img src="/images/profile.png" alt="" class="w-72 h-72">
+	</section>
+ 
+
+	<section class="my-24">
+		
+		<h2 class="text-2xl font-medium mb-5 text-gray-200">Skills</h2>
+		
+		<div class="grid md:grid-cols-2 gap-8">
+			<div>
+				<h3 class="mb-3 font-medium text-gray-300">Comfortable</h3>
+				<div class="flex flex-wrap text-xl gap-4">
+					{skills.comfortable.map(item => (
+						<div class="skills-item tooltip-container">
+								<span class="tooltip sr-only">{item.name}</span>
+								<i title={item.name} class={`devicon-${item.icon}-plain`}></i>
+						</div>
+					))}
+				</div>
+			</div>
+			<div>
+				<h3 class="mb-3 font-medium text-gray-300">Mastering</h3>
+				<div class="flex flex-wrap text-xl gap-4">
+					{skills.mastering.map(item => (
+						<div class="skills-item tooltip-container">
+								<span class="tooltip sr-only">{item.name}</span>
+								<i title={item.name} class={`devicon-${item.icon}-plain`}></i>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+  <section class="my-20" aria-label="journey">
+		<h2 class="text-xl md:text-2xl font-semibold  mb-4">A journey of many winding roads</h2>
+		{Object.keys(journey).reverse().map(year => (
+			<div class="mb-8 bg-gray-900 p-3 rounded shadow-xl">
+				<h3 class="mb-2 text-gray-400 font-bold">{year}</h3>
+				{journey[year].map(item => (
+					<div class=" mb-5 ">
+						<div class="flex items-center gap-1">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500">
+  						<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+						<h4 class="text-gray-300 text-lg font-medium">{item.title}</h4>
+						
+					</div>
+
+						
+							<div class="ml-6">
+							
+								<p class=" font-light text-gray-400">{item.description}</p>
+							</div>
+					</div>
+				))}
+			</div>
+		))}
+	</section>
+
+
+
+</BaseLayout>
